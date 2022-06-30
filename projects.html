@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joe's Projects - Quality Joinery</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/projects.js" defer></script>
+</head>
+<body>
+    <a href="#main" class="skip-to-content">Skip to Content</a>
+
+    <header class="primary-header">
+        <div class="[ primary-header__container ] [ flex container ]">
+            <a href="index.html">
+                <img class="logo" src="./assets/logo.svg" alt="Joe's Projects">
+            </a>
+
+            <div class="nav-toggle-container">
+                <div class="nav-toggle" role="button" aria-controls="primary-navigation" aria-expanded="false" aria-pressed="false">   
+                    <span class="sr-only">Menu Toggle</span>
+                </div>
+            </div>
+
+            <nav aria-label="primary navigation" data-visible="false" id="primary-navigation" class="[ primary-navigation ] [ fs-200 ]">        
+                <ul class="[ primary-navigation__list ] [ flex ]">
+                    <li>
+                        <a class="[ primary-navigation__links ] [ flex ]" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="[ primary-navigation__links active ] [ flex ]" href="projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a class="[ primary-navigation__links ] [ flex ]" href="approach.html">Approach</a>
+                    </li>
+                    <li>
+                        <a class="[ primary-navigation__links ] [ flex ]" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <header class="[ banner ] [ grid container ]">
+            <div class="[ banner__content ] [ flex ]">
+                <h1 class="banner__title">Projects</h1>
+            </div>
+        </header>
+
+        <section class="section" aria-labelledby="projects">
+
+            <div class="[ section__content section__content--projects ] [ container ]">
+                
+                <label class="fs-200" for="category-select" id="category-select-label">Projects by Category</label>
+                <div class="category-select-container">
+                    <select id="category-select" class="category-select">
+                        <option value="" selected>All</option>
+                        <option value="bedside-tables">Bedside Tables</option>
+                        <option value="coffee-tables">Coffee Tables</option>
+                        <option value="dining-tables">Dining Tables</option>
+                        <option value="dressers">Dressers</option>
+                        <option value="fences">Fences</option>
+                        <option value="shelves">Shelves</option>
+                    </select>
+                    <div class="dropdown-arrow">
+                        <img src="./assets/dropdown-arrow.svg" alt="dropdown arrow">
+                    </div>
+                </div>
+                <div class="[ projects-grid ] [ grid ]" data-projects-grid></div>
+
+            </div>
+
+        </section>
+
+        <template>
+            <div class="project-container" data-project>
+                <div role="button" aria-pressed="false" class="[ close-btn-container ] [ grid ]" data-close-btn>
+                    <div class="close-btn">   
+                        <span class="sr-only">Close Menu</span>
+                    </div>
+                </div>
+                <picture class="project-image obj-fit overlay-dark">   
+                    <source srcset="" type="image/webp">                         
+                    <img loading="lazy" src="" alt="">                                                    
+                </picture>
+            </div>
+        </template>
+
+        <!-- for mobile/tablet -->
+        <dialog class="[ modal modal--project ]" data-project-modal>
+            <div class="[ modal__container ] [ grid container ]">
+                <div role="button" aria-pressed="false" class="[ close-btn-container ] [ grid ]" data-close-btn>
+                    <div class="close-btn">   
+                        <span class="sr-only">Close Menu</span>
+                    </div>
+                </div>
+                <picture class="[ modal__project-image ]">
+                    <source srcset="" type="image/webp">
+                    <img src="" alt="">
+                </picture>
+            </div>
+        </dialog>
+
+    </main>
+
+    <footer class="[ footer ] [ bg-secondary ]">
+        <div class="[ footer__container ] [ grid container ]">
+            <div class="footer__logo">
+                <a href="index.html">
+                    <img class="logo" src="./assets/logo.svg" alt="Joe's Projects">
+                </a>
+            </div>
+            <div class="[ footer__content ] [ grid ]">
+                <nav class="footer__upper" aria-label="primary navigation">
+                    <ul class="[ footer__upper-nav ] [ flex ]">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="approach.html">Approach</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="[ footer__middle hover-state ] [ grid ]">
+                    <a href="#facebook"><img src="./assets/facebook-icon.svg" alt="facebook link"></a>
+                </div>
+                <div class="[ footer__lower ] [ flex ]">            
+                    <ul class="[ footer__lower-nav ] [ flex ]">
+                        <li>
+                            <a href="#terms">Terms of Service</a>
+                        </li>
+                        <li>
+                            <a href="privacy-policy.html">Privacy Policy</a>
+                        </li>
+                    </ul>
+                    <p>&copy; 2022 Joe's Projects</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

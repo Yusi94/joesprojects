@@ -1,0 +1,76 @@
+{
+    "projects": [
+        {
+            "category": "bedside-tables",
+            "images": {
+                "webp": "../assets/images/bedside-table.webp",
+                "png": "../assets/images/bedside-table.png",
+                "alt": "Bedside Table"
+            }
+        },
+        {
+            "category": "bedside-tables",
+            "images": {
+                "webp": "../assets/images/bedside-tables.webp",
+                "png": "../assets/images/bedside-tables.png",
+                "alt": "Bedside Tables"
+            }
+        },
+        {
+            "category": "coffee-tables",
+            "images": {
+                "webp": "../assets/images/coffee-table.webp",
+                "png": "../assets/images/coffee-table.png",
+                "alt": "Coffee Table"
+            }
+        },
+        {
+            "category": "dining-tables",
+            "images": {
+                "webp": "../assets/images/dining-table.webp",
+                "png": "../assets/images/dining-table.png",
+                "alt": "Dining Table"
+            }
+        },
+        {
+            "category": "dining-tables",
+            "images": {
+                "webp": "../assets/images/tas-oak-dining-table.webp",
+                "png": "../assets/images/tas-oak-dining-table.png",
+                "alt": "Tasmanian Oak Dining Table"
+            }
+        },
+        {
+            "category": "dressers",
+            "images": {
+                "webp": "../assets/images/dresser.webp",
+                "png": "../assets/images/dresser.png",
+                "alt": "Dresser"
+            }
+        },
+        {
+            "category": "fences",
+            "images": {
+                "webp": "../assets/images/fence.webp",
+                "png": "../assets/images/fence.png",
+                "alt": "Fence"
+            }
+        },
+        {
+            "category": "shelves",
+            "images": {
+                "webp": "../assets/images/shelf.webp",
+                "png": "../assets/images/shelf.png",
+                "alt": "Shelf"
+            }
+        },
+        {
+            "category": "shelves",
+            "images": {
+                "webp": "../assets/images/wall-shelf.webp",
+                "png": "../assets/images/wall-shelf.png",
+                "alt": "Wall Shelf"
+            }
+        }
+    ] 
+}

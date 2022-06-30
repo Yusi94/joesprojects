@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joe's Projects - Quality Joinery</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/carousel.js" defer></script>
+    <script src="./scripts/tabs.js" defer></script>
+    <script src="./scripts/delivery-modal.js" defer></script>
+</head>
+<body>
+    <a href="#main" class="skip-to-content">Skip to Content</a>
+
+    <header class="primary-header">
+        <div class="[ primary-header__container ] [ flex container ]">
+            <a href="index.html">
+                <img class="logo" src="./assets/logo.svg" alt="Joe's Projects">
+            </a>
+
+            <div class="nav-toggle-container">
+                <div class="nav-toggle" role="button" aria-controls="primary-navigation" aria-expanded="false" aria-pressed="false">   
+                    <span class="sr-only">Menu Toggle</span>
+                </div>
+            </div>
+
+            <nav aria-label="primary navigation" data-visible="false" id="primary-navigation" class="[ primary-navigation ] [ fs-200 ]">        
+                <ul class="[ primary-navigation__list ] [ flex ]">
+                    <li>
+                        <a class="[ primary-navigation__links active ] [ flex ]" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="[ primary-navigation__links ] [ flex ]" href="projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a class="[ primary-navigation__links ] [ flex ]" href="approach.html">Approach</a>
+                    </li>
+                    <li>
+                        <a class="[ primary-navigation__links ] [ flex ]" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>    
+
+    <main id="main">
+        <header class="[ banner banner--home ] [ grid container ]">
+            <div class="[ banner__content ] [ flex ]">
+                <h1 class="fs-700">Quality joinery, handcrafted to suit you.</h1>
+                <h3 class="fs-300">Here at Joe's Projects, we create beautiful pieces to add to your space.</h3>
+                <a class="[ btn ] [ fs-200 fw-500 ]" href="#projects" data-align="start">Featured Projects</a>
+            </div>
+            <div class="banner__img">
+                <img src="./assets/images/hero-image-transparent.png" alt="Bedside Table">
+                <img class="banner__circle" src="./assets/circle.svg" alt="circle decoration">
+            </div>
+        </header>
+
+        <section class="[ section ] [ grid fitscreen ]" aria-labelledby="projects">
+
+            <h3 class="watermark uppercase">Craft</h3>
+
+            <div class="[ section__content section__content--home ] [ grid container ]">               
+
+                <h1 id="projects" class="[ section__title ] [ uppercase underline ]">Featured Projects</h1>
+
+                <div class="[ section__carousel-container ] [ grid ]" aria-label="carousel">
+                    <ul class="[ section__carousel ] [ flex ]" data-carousel>
+                        <li class="[ section__carousel-item ] [ grid ]" data-carousel-item>
+                            <img loading="lazy" src="./assets/images/tas-oak-dining-table-transparent.png" alt="tas oak dining table">
+                        </li>
+                        <li class="[ section__carousel-item ] [ grid ]" data-carousel-item>
+                            <img loading="lazy" src="./assets/images/coffee-table-transparent.png" alt="coffee table">
+                        </li>
+                        <li class="[ section__carousel-item ] [ grid ]" data-carousel-item>
+                            <img loading="lazy" src="./assets/images/shelf-transparent.png" alt="shelf">
+                        </li>
+                        <li class="[ section__carousel-item ] [ grid ]" data-carousel-item>
+                            <img loading="lazy" src="./assets/images/dresser-transparent.png" alt="dresser">
+                        </li>
+                        <li class="[ section__carousel-item ] [ grid ]" data-carousel-item>
+                            <img loading="lazy" src="./assets/images/coffee-table-2-transparent.png" alt="coffee table">
+                        </li>
+                        <li class="[ section__carousel-item ] [ grid ]" data-carousel-item>
+                            <img loading="lazy" src="./assets/images/bedside-tables-transparent.png" alt="bedside tables">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="[ carousel-indicator-container ] [ flex ]" aria-label="carousel indicators">
+                    <div class="carousel-indicator"></div>
+                    <div class="carousel-indicator"></div>
+                    <div class="carousel-indicator"></div>
+                    <div class="carousel-indicator"></div>
+                    <div class="carousel-indicator"></div>
+                    <div class="carousel-indicator"></div>
+                </div>
+
+                <div class="[ carousel-btn-container ] [ flex ]">
+                    <button class="[ carousel-btn hover-state ] [ grid ]" data-carousel-button="prev">
+                        <img src="./assets/previous.svg" alt="previous button">
+                    </button>
+                    <button class="[ carousel-btn hover-state ] [ grid ]" data-carousel-button="next">
+                        <img src="./assets/next.svg" alt="next button">
+                    </button>
+                </div>
+
+                <p class="fs-500" style="text-align: center">We build all sorts of things</p>
+                
+                <a class="[ btn ] [ fs-200 ]" href="projects.html">See our collection</a>
+
+            </div>
+            
+        </section>
+
+        <section class="[ section ] [ grid fitscreen ]" aria-labelledby="approach">
+
+            <div class="[ section__content section__content--home ] [ grid container ]" data-approach-content>               
+
+                <div class="grid">
+                    <h1 id="approach" class="[ section__title ] [ uppercase underline ]">Our Approach</h1>      
+                    
+                    <div class="section__tab-content-container">
+                        <div class="tab-content" data-tab-content>
+                            <h2>Outlining</h2>
+                            <p class="fs-200">The initial contact will outline the specifications of your desired project to ensure we understand your needs completely.</p>
+                        </div>
+
+                        <div class="tab-content" data-tab-content>
+                            <h2>Selection & Prep</h2>
+                            <p class="fs-200">We'll use the finest Tasmanian Oak timber or procure any particular type of wood you'd like and begin to prep all the pieces.</p>
+                        </div>
+
+                        <div class="tab-content" data-tab-content>
+                            <h2>Crafting</h2>
+                            <p class="fs-200">With the art of craft, the pieces come together and form the ideal shape. We'll double check our work to ensure perfection.</p>
+                        </div>
+
+                        <div class="tab-content" data-tab-content>
+                            <h2>Finishing</h2>
+                            <p class="fs-200">We'll finish off with a thorough sanding and one or more layers of coating to give your piece a beatiful dark tone and long lasting protection.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="[ tab-list ] [ flex ] [ fs-400 ]" aria-label="tabs" role="tablist">
+                        <button id="outlining" aria-selected="false" role="tab" class="[ tab hover-state ] [ grid ]" tabindex="0">01</button>
+                        <button id="selection" aria-selected="false" role="tab" class="[ tab hover-state ] [ grid ]" tabindex="-1">02</button>
+                        <button id="crafting" aria-selected="false" role="tab" class="[ tab hover-state ] [ grid ]" tabindex="-1">03</button>
+                        <button id="finishing" aria-selected="false" role="tab" class="[ tab hover-state ] [ grid ]" tabindex="-1">04</button>
+                    </div>
+
+                    <a class="[ btn ] [ fs-200 ]" href="process.html" data-align="start">Read in more detail</a>
+                </div>
+
+                <div class="video-container obj-fit">
+                    <img loading="lazy" class="video" src="./assets/images/requirements.jpg" alt="Gathering your requirements">
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="[ section ] [ grid fitscreen ]" aria-labelledby="assurance">
+
+            <h3 class="watermark uppercase">Bespoke</h3>
+
+            <div class="[ section__content section__content--home ] [ grid container ]" data-assurance-content>
+
+                <h1 id="assurance" class="[ section__title ] [ uppercase underline ]">Our Commitment</h1>
+                
+                <div class="section__card-container flex">
+                    <div class="section__card grid">
+                        <div>
+                            <img loading="lazy" src="./assets/quality-icon.svg" alt="quality icon">
+                            <p class="fs-200 fw-600">Quality</p>
+                            <p class="">We always craft with precision and double check our work to give you the best finish.</p>
+                        </div>
+                    </div>
+
+                    <div class="section__card grid">
+                        <div>
+                            <img loading="lazy" src="./assets/competitive-pricing-icon.svg" alt="competitive pricing icon">
+                            <p class="fs-200 fw-600">Competitive Pricing</p>
+                            <p class="">Not only do we uphold professionalism and quality in our work, we'll give you the best prices.</p>
+                        </div>
+                    </div>
+                            
+
+                    <div class="section__card grid">
+                        <div>
+                            <img loading="lazy" src="./assets/customer-satisfaction-icon-2.svg" alt="customer satisfaction icon">
+                            <p class="fs-200 fw-600">Customer Satisfaction</p>
+                            <p class="">We aim to please by giving you what you want in the best way possible.</p>
+                        </div>
+                        <a class="[ flex ] [ fw-500 ]" href="#facebook-page" target="_blank" style="--gap: .5rem; align-items: center">
+                            <span>See our reviews</span>
+                            <img width="20" height="20" src="./assets/new-tab-icon.svg" alt="new tab icon">
+                        </a>
+                    </div>
+                            
+
+                    <div class="section__card grid">
+                        <div>
+                            <img loading="lazy" src="./assets/delivery-icon.svg" alt="delivery icon">
+                            <p class="fs-200 fw-600">We Deliver</p>
+                            <p class="">We can deliver right to your doorstep.</p>
+                        </div>
+                        <button class="[ flex ] [ fw-500 ]" data-open-modal-btn style="--gap: .5rem; align-items: center">
+                            <span>See our delivery options</span> 
+                            <img width="20" height="20" src="./assets/dialog.svg" alt="new tab icon">
+                        </button>
+                    </div>
+                </div>
+                    
+
+                <p class="fs-500 fw-500" style="text-align: center;">Interested in working with us?</p>
+
+                <a class="[ btn ] [ fs-200 ]" href="contact.html">Get in Touch</a>  
+            </div>
+
+            <dialog class="[ modal modal--delivery ]" data-delivery-modal>
+
+                <div class="[ modal__container ] [ grid container ]">
+                    <div role="button" aria-pressed="false" class="[ close-btn-container ] [ grid ]" data-close-btn>
+                        <div class="close-btn">   
+                            <span class="sr-only">Close Menu</span>
+                        </div>
+                    </div>
+                
+                    <div class="[ modal__content ] [ grid ]">
+                        <div class="flow">
+                            <div class="modal__delivery-type">
+                                <p class="fs-400 fw-500">Personal Delivery</p>
+                            </div>
+                            <div class="[ modal__icon ] [ flex ]">
+                                <img src="./assets/delivery-car-icon.svg" alt="car">
+                            </div>
+                            <div class="modal__text">
+                                <p class="fs-200">We'll personally deliver your order within a 200km radius of our operating quarters, and depending on the size or quantity of your order.</p>
+                                <p  style="margin-block-start: 1rem"><span class="fw-500 text-tertiary">Rate:</span> $50 + $2/km anywhere beyond a 50km radius</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flow">
+                            <div class="modal__delivery-type">
+                                <p class="fs-400 fw-500">Courier Service</p>
+                            </div>
+                            <div class="[ modal__icon ] [ flex ]">
+                                <img src="./assets/delivery-icon.svg" alt="truck">
+                            </div>
+                            <div class="modal__text">
+                                <p class="fs-200">We have a courier service which can deliver where ever you'd like. Details about cost can be given upon receiving a quote from the courier.</p>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+            </dialog>
+
+        </section>
+    </main>
+
+    <footer class="[ footer ] [ bg-secondary ]">
+        <div class="[ footer__container ] [ grid container ]">
+            <div class="footer__logo">
+                <a href="index.html">
+                    <img class="logo" src="./assets/logo.svg" alt="Joe's Projects">
+                </a>
+            </div>
+            <div class="[ footer__content ] [ grid ]">
+                <nav class="footer__upper" aria-label="primary navigation">
+                    <ul class="[ footer__upper-nav ] [ flex ]">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="approach.html">Approach</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="[ footer__middle hover-state ] [ grid ]">
+                    <a href="#facebook"><img src="./assets/facebook-icon.svg" alt="facebook link"></a>
+                </div>
+                <div class="[ footer__lower ] [ flex ]">            
+                    <ul class="[ footer__lower-nav ] [ flex ]">
+                        <li>
+                            <a href="#terms">Terms of Service</a>
+                        </li>
+                        <li>
+                            <a href="privacy-policy.html">Privacy Policy</a>
+                        </li>
+                    </ul>
+                    <p>&copy; 2022 Joe's Projects</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

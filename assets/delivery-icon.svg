@@ -1,0 +1,18 @@
+<svg viewBox="0 0 94.436 59.746" xmlns="http://www.w3.org/2000/svg">
+	<g transform="translate(-.25 -.24998)" stroke-width=".5">
+		<path d="m68.523 52.303h-6v-39.6h12.51l9.545 8.92 9.858 9.113v21.558h-6v-0.111a9.9565 9.9565 0 0 0-19.913 0v0.114z" fill="#d29f32" />
+		<path d="m74.1 17.405 19.741 16.36v18.027s-5.52-0.112-5.8-0.112c0 0-0.818-9.333-7.725-9.7s-6.214 1.014-6.214 1.014z" fill="#d8ad4f" />
+		<path d="m68.523 52.303h-6v-39.6h12.51l9.545 8.92 9.858 9.113v21.558h-6v-0.111c0-5.4988-4.4577-9.9565-9.9565-9.9565s-9.9565 4.4577-9.9565 9.9565v0.114z" fill="none" stroke="#1a1a1a" stroke-linejoin="round" />
+		<ellipse cx="36.75" cy="52.185" rx="7.562" ry="7.561" fill="#1a1a1a" stroke="#d29f32" stroke-linejoin="round" />
+		<ellipse cx="36.75" cy="52.185" rx="7.562" ry="7.561" fill="#d29f32" stroke="#1a1a1a" stroke-linejoin="round" />
+		<ellipse cx="78.481" cy="52.185" rx="7.562" ry="7.561" fill="#d29f32" stroke="#1a1a1a" stroke-linejoin="round" />
+		<path d="m11.84 0.5a1.25 1.25 0 0 0-1.253 1.253v49.281a1.25 1.25 0 0 0 1.253 1.253h14.959q0-0.053 0-0.106a9.954 9.954 0 0 1 19.908 0q0 0.053 0 0.106h14.419a1.25 1.25 0 0 0 1.257-1.253v-49.281a1.25 1.25 0 0 0-1.257-1.253z" fill="#d29f32" />
+		<path d="m27.06 5.45h33.763a1.086 1.086 0 0 1 0.92 1.2v44.959h-14.505s-2.42-9.46-9.783-10.07-10.395 6.66-10.395 6.66z" fill="#d8ad4f" />
+		<circle cx="78.478" cy="52.29" r="3.223" fill="#d29f32" stroke="#1a1a1a" stroke-linejoin="round" />
+		<path d="m0.5 23.425h30.434" fill="none" stroke="#1a1a1a" stroke-linecap="round"/>
+		<ellipse cx="36.751" cy="52.186" rx="3.225" ry="3.224" fill="#d29f32" stroke="#1a1a1a" stroke-linejoin="round" />
+		<path d="m4.481 12.383h28.636" fill="none" stroke="#1a1a1a" stroke-linecap="round"/>
+		<path d="m65.369 15.682v11.848h20.565l-12.19-11.848z" fill="#d29f32" stroke="#1a1a1a" stroke-linejoin="round"/>
+		<path d="m11.84 0.5c-0.6927-0.001664-1.2547 0.5603-1.253 1.253v49.281c-0.0017 0.6927 0.5603 1.2547 1.253 1.253h14.959v-0.106c0-5.4974 4.4566-9.954 9.954-9.954s9.954 4.4566 9.954 9.954v0.106h15.816v-50.534c0.0017-0.69427-0.70274-1.2569-1.397-1.253z" fill="none" stroke="#1a1a1a" stroke-linejoin="round" />
+	</g>
+</svg>
