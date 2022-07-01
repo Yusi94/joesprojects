@@ -763,6 +763,8 @@ div[role="button"] { cursor: pointer; }
     height: 72px; 
 }
 
+.section__card-text { line-height: 1.6; }
+
 @media (min-width: 45em) {
     .section__card { align-self: stretch; }
 
@@ -817,6 +819,8 @@ div[role="button"] { cursor: pointer; }
     width: 100px;
     aspect-ratio: 1;
 }
+
+.modal__text { line-height: 1.6; }
 
 @media (min-width: 48em) {
     .modal__content {
