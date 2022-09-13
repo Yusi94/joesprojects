@@ -16,16 +16,16 @@
     <header class="primary-header">
         <div class="[ primary-header__container ] [ flex container ]">
             <a href="index.html">
-                <img class="logo" src="./assets/logo.svg" alt="Joe's Projects">
+                <img class="logo" src="./assets/logo-inverted.svg" alt="Joe's Projects">
             </a>
 
             <div class="nav-toggle-container">
-                <div class="nav-toggle" role="button" aria-controls="primary-navigation" aria-expanded="false" aria-pressed="false">   
+                <div class="nav-toggle inverse" role="button" aria-controls="primary-navigation" aria-expanded="false" aria-pressed="false">   
                     <span class="sr-only">Menu Toggle</span>
                 </div>
             </div>
 
-            <nav aria-label="primary navigation" data-visible="false" id="primary-navigation" class="[ primary-navigation ] [ fs-200 ]">        
+            <nav aria-label="primary navigation" data-visible="false" id="primary-navigation" class="[ primary-navigation ] [ fs-200 ]" data-inverse-state="inverse">        
                 <ul class="[ primary-navigation__list ] [ flex ]">
                     <li>
                         <a class="[ primary-navigation__links ] [ flex ]" href="index.html">Home</a>
@@ -45,9 +45,12 @@
     </header>
 
     <main id="main">
-        <header class="[ banner banner--contact ] [ grid container ]">
-            <div class="[ banner__content ] [ flex ]">
-                <h1 class="banner__title">Contact</h1>
+        <header class="[ banner ] [ grid ]">
+            <div class="[ banner__content ]">
+                <h1 class="[ banner__title ] [ ff-serif ]">Contact Us</h1>
+            </div>
+            <div class="[ banner__img-container ] [ grid obj-fit ] [ overlay-dark ]" style="--transparency: .75">
+                <img class="banner__img" src="./assets/images/dining-table.webp" alt="Dining Table Banner Image">
             </div>
         </header>
 

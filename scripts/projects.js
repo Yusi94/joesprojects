@@ -1,4 +1,4 @@
-// When filtering projects, we need to recalculate cell positions
+// When filtering projects, recalculate cell positions
 
 let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 // const isMobile = vw <= 1080 ? true : false;
