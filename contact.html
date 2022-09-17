@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles.css">
 
     <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/contact.js" defer></script>
 </head>
 <body>
     <a href="#main" class="skip-to-content">Skip to Content</a>
@@ -53,44 +54,46 @@
                 <img class="banner__img" src="./assets/images/dining-table.webp" alt="Dining Table Banner Image">
             </div>
         </header>
-
+        
         <div class="[ sections-wrapper ] [ flex ]">
-            <section class="[ section ] [ bg-secondary ]">
+            <section class="[ section ] bg-secondary">
 
                 <div class="[ section__content section__content--contact ] [ grid container ]">
-                    <h3 class="[ section__contact-title ] [ fs-400 fw-700 uppercase ]" data-form-title>
+                    <h3 class="[ section__contact-title ] [ fs-400 fw-600 uppercase ]" data-form-title>
                         <span>Tell us what you'd like</span>
                     </h3>
 
-                    <form class="section__form" action="https://formsubmit.co/joesprojects@gmail.com" method="post" autocomplete="on">
+                    <form id="contact-form" class="section__form" method="post" autocomplete="on">
                         <input type="text" name="_honey" style="display:none">
-                        <input type="hidden" name="_captcha" value="false">
+                        <!-- <input type="hidden" name="_captcha" value="false"> -->
 
                         <div class="flow">
-                            <div class="fw-500">
+                            <div>
                                 <label for="name">Name*</label>
                                 <input type="text" name="name" id="name" required>
                             </div>
-                            <div class="fw-500">
+                            <div>
                                 <label for="email">Email*</label>
                                 <input type="email" name="email" id="email" required>
                             </div>
-                            <div class="fw-500">
+                            <div>
                                 <label for="message">Message*</label>
                                 <textarea type="text" name="message" id="message" rows="5" cols="20" required></textarea>
                             </div>
                             <button type="submit" name="submit" class="[ btn submit-btn ] [ fw-700 uppercase ]" id="submit">Send</button> 
                         </div>                   
-                    </form>
+                    </form>   
+                    <div class="submit-status"></div>                         
                 </div>
-
+                
             </section>
+            
 
             <section class="section">
 
                 <div class="[ section__content section__content--contact ] [ grid container ]">
                     <div class="[ section__contact-container ] [ flow ]">
-                        <h3 class="[ section__contact-title ] [ fs-400 fw-700 uppercase ]">
+                        <h3 class="[ section__contact-title ] [ fs-400 fw-600 uppercase ]">
                             <span>Contact</span>
                         </h3>
                         <div>
@@ -103,7 +106,7 @@
                         </div>
                     </div>
                     <div class="section__contact-container flow">
-                        <h3 class="[ section__contact-title ] [ fs-400 fw-700 uppercase ]">
+                        <h3 class="[ section__contact-title ] [ fs-400 fw-600 uppercase ]">
                             <span>Social</span>
                         </h3>
                         <div>

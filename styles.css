@@ -1171,6 +1171,28 @@ textarea { resize: none; }
     color: hsl( var(--clr-dark) );
 }
 
+.submit-status {
+    position: absolute;
+    z-index: 1;
+    max-width: 424px;
+    text-align: center;
+}
+
+.submit-status.success,
+.submit-status.error {
+    padding: 1rem;
+    color:hsl( var(--clr-light) );
+    border-radius: 5px;
+}
+
+.submit-status.success {
+    background-color: rgb(107, 182, 107);
+}
+
+.submit-status.error {
+    background-color: rgb(182, 107, 107);
+}
+
 @media (min-width: 64em) {
     .sections-wrapper { 
         flex-direction: row;

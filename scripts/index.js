@@ -21,8 +21,6 @@ navToggleContainer.addEventListener('click', () => {
     }
 });
 
-console.log(primaryHeader)
-
 // Scroll effects for primary header and navigation
 // Needs some sort of limiter for showing header on scroll-up because any little bit of scroll-up shows the header which is annoying
 let lastScrollPosition = 0;
