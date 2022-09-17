@@ -13,8 +13,8 @@ contactForm.addEventListener('submit', e => {
             'Accept': 'application/json'
         },
         body: JSON.stringify({
-            name: contactPerson,
-            message: message
+            name: `${contactPerson}`,
+            message: `${message}`
         })
     })
     .then(response => response.json())
