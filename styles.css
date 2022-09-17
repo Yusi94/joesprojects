@@ -35,6 +35,8 @@
     --btn-padding-block: .75em;
     --btn-padding-inline: 1.5em;
 
+    --section-margin-block: 6rem;
+
     --footer-padding-block: 6rem;
 }
 
@@ -335,7 +337,7 @@ div[role="button"] { cursor: pointer; }
 
 /* 1.4 Footer */
 @media (max-width: 47.99em) {
-    .footer { margin-block-start: 5rem; }
+    /* .footer { margin-block-start: 5rem; } */
 }
 
 .footer { padding-block: var(--footer-padding-block); }
@@ -531,7 +533,7 @@ div[role="button"] { cursor: pointer; }
 /* TODO */
 .banner__title {
     padding-inline-start: .375em;
-    color: hsl( var(--clr-primary) );
+    color: transparent;
     -webkit-text-stroke: 1px hsl( var(--clr-primary) );
     font-size: clamp(40px, 10vw + 1rem, 120px);
     font-weight: 400;
@@ -545,17 +547,6 @@ div[role="button"] { cursor: pointer; }
 }
 
 @media (min-width: 64em) {
-    .banner::before {
-        content: '';
-        position: absolute;
-        inset-block-end: -12.5%;
-        inset-inline: -10%;
-        z-index: 1;
-        height: 20%;
-        background: hsl( var(--clr-primary) );
-        filter: blur(1em)
-    }
-
     .banner__title { letter-spacing: .6em; }
 }
 
@@ -564,10 +555,10 @@ div[role="button"] { cursor: pointer; }
 .hero {
     place-items: center;
     position: relative;
-    inset-block-start: 3.75rem; /* Push content down (height of primary__header) to stop content overlapping */
+    /*inset-block-start: 3.75rem;  Push content down (height of primary__header) to stop content overlapping */
     width: 100%;
-    height: calc(100vh - 3.75rem);
-    padding-block: 1.75rem;
+    height: 100vh;
+    padding-block: 5.5rem;
 }
 
 .hero__content {
@@ -582,11 +573,15 @@ div[role="button"] { cursor: pointer; }
     position: relative;
 }
 
+@media (max-width: 63.99em) {
+    .hero__img {
+        max-width: 80%;
+    }
+}
+
 .hero__circle { 
-    justify-self: start;
     position: absolute;
     z-index: -1;
-    width: 90%;
 }
 
 @media (min-width: 48em) {
@@ -606,8 +601,7 @@ div[role="button"] { cursor: pointer; }
 /* Sections */
 .section { 
     align-items: center;
-    position: relative; 
-    inset-block-start: 3.75rem; /* Push content down (height of primary__header) to stop content overlapping */
+    position: relative;
 }
 
 .watermark { display: none; }
@@ -628,6 +622,7 @@ div[role="button"] { cursor: pointer; }
 .section__content { 
     place-items: center;
     width: 100%;
+    padding-block: 1rem;
 }
 
 .section__content[data-approach-content],
@@ -639,7 +634,7 @@ div[role="button"] { cursor: pointer; }
 }
 
 @media (min-width: 48em) {
-    .section__content--home { padding-block: 7.5rem; }
+    /* .section__content--home { padding-block: 7.5rem; } */
 }
 
 @media (min-width: 64em) {
@@ -898,7 +893,7 @@ div[role="button"] { cursor: pointer; }
 @media (min-width: 48em) {
     .category-select-container {
          width: min(calc(50% - 1.5rem), 430px); 
-         margin-block-end: 5rem;
+         margin-block-end: 3rem;
     }
 
     .projects-grid { grid-template-columns: repeat(2, 1fr); }

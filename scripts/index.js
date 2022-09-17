@@ -49,15 +49,9 @@ window.addEventListener('load', () => {
     }
 });
 
-const bannerTitle = document.querySelector('.banner__title');
-let opacity = 0;
-
 window.addEventListener('scroll', () => {
     requestAnimationFrame(() => {
         let currentScrollPosition = window.scrollY;
-
-        opacity = 1 - (currentScrollPosition / 300);
-        bannerTitle.style.color = `hsl(42 64% 89% / ${opacity} )`;
 
         if(navToggle.getAttribute('aria-expanded') === 'true') {
             body.classList.remove('.scroll-down');
