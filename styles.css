@@ -632,10 +632,6 @@ div[role="button"] { cursor: pointer; }
     text-align: center;
 }
 
-@media (max-width: 63.99em) {
-    .section__content[data-approach-content]:first-child { align-self: start; }
-}
-
 @media (min-width: 64em) {
     .section__content[data-approach-content] { 
         grid-auto-flow: column; 
@@ -731,19 +727,13 @@ div[role="button"] { cursor: pointer; }
 
 .tab-content > p { max-width: 45ch; }
 
-.video-container { 
-    position: absolute;      
-    z-index: -1;
-    width: 100vw;
-}
-
-@media (max-width: 63.99em) {
-    .video-container { inset-block-end: 0; }
-}
+.video-container { width: calc(100% + 2rem); }
 
 @media (min-width: 64em) {
     .video-container {
+        position: absolute;      
         inset-inline-end: 0;
+        z-index: -1;
         width: 40%;
         height: 70%;
     }
