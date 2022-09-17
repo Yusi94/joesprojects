@@ -1,10 +1,11 @@
 const contactForm = document.querySelector('#contact-form');
-const contactPerson = document.querySelector('#name').value;
-const message = document.querySelector('#message').value;
 const submitStatus = document.querySelector('.submit-status');
 
 contactForm.addEventListener('submit', e => {
     e.preventDefault();
+
+    const contactPerson = document.querySelector('#name').value;
+    const message = document.querySelector('#message').value;
 
     fetch("https://formsubmit.co/ajax/y.uzun204@gmail.com", {
         method: "POST",
