@@ -625,16 +625,9 @@ div[role="button"] { cursor: pointer; }
     padding-block: 1rem;
 }
 
-.section__content[data-approach-content],
-.section__content[data-assurance-content] { --gap: 5rem; }
-
 .section__title { 
     justify-self: center; 
     text-align: center;
-}
-
-@media (min-width: 48em) {
-    /* .section__content--home { padding-block: 7.5rem; } */
 }
 
 @media (min-width: 64em) {
