@@ -7,7 +7,7 @@ contactForm.addEventListener('submit', e => {
     const contactPerson = document.querySelector('#name').value;
     const message = document.querySelector('#message').value;
 
-    fetch("https://formsubmit.co/ajax/y.uzun204@gmail.com", {
+    fetch("https://formsubmit.co/ajax/youremail@gmail.com", {
         method: "POST",
         headers: { 
             'Content-Type': 'application/json',
